@@ -9,7 +9,7 @@
   
     <context-param>
         <param-name>contextConfigLocation</param-name>
-        <param-value>com.example.mySpringProject.MyApplication</param-value>
+        <param-value>com.example.mySpringProject.TomcatApplication</param-value>
     </context-param>
   
    
