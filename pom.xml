@@ -27,14 +27,14 @@
   	<dependency>
   			<groupId>org.springframework.boot</groupId>
   			<artifactId>spring-boot-starter-web</artifactId>
-  			<!-- 移除嵌入式tomcat插件 --> 
+  			<!-- 移除嵌入式tomcat插件
   			<exclusions>
   				<exclusion>
   					<groupId>org.springframework.boot</groupId>
   					<artifactId>spring-boot-starter-tomcat</artifactId>
   				</exclusion> 
   			</exclusions>
-  			
+  			 --> 
   	</dependency>
 	
 	
@@ -49,14 +49,14 @@
 		<artifactId>jstl</artifactId>
 	</dependency>
 	
-	<!-- 部署在tomcat下面   -->
+	<!-- 部署在tomcat下面 
   	<dependency>
   		<groupId>org.apache.tomcat</groupId>
   		<artifactId>tomcat-servlet-api</artifactId>
   		<version>7.0.69</version>
   		<scope>provided</scope>
   	</dependency>
-  		
+  		  -->
   	 
     <!-- tomcat 冲突解决方案1 用spring-boot内置的tomcat库， 并指定你要部署到Tomcat的版本 -->
     <!-- 
@@ -82,7 +82,15 @@
       		<scope>provided</scope>
       </dependency>
     
-    
+    <!-- mysql配置 -->
+    <dependency>
+    	<groupId>mysql</groupId>
+    	<artifactId>mysql-connector-java</artifactId>
+    </dependency>
+    <dependency>
+    	<groupId>org.springframework.boot</groupId>
+    	<artifactId>spring-boot-starter-jdbc</artifactId>
+    </dependency>
     
     
     <dependency>

@@ -1,5 +1,4 @@
 package com.example.mySpringProject.bean;
-
  
 public class UserInfo {
 
